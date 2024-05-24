@@ -1,0 +1,73 @@
+/* Navbar.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .navbar-brand .navbar-logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+  
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-link {
+    margin-left: 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .navbar-link:hover {
+    color: #f4d03f;
+  }
+  
+  .navbar-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .navbar-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: 0.4s;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+      background-color: #333;
+    }
+    .navbar-links.active {
+      display: flex;
+    }
+    .navbar-link {
+      margin: 15px 0;
+    }
+    .navbar-toggle {
+      display: flex;
+    }
+  }
+  
